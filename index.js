@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
 class App extends Component {
   // constructor() {
@@ -51,6 +53,17 @@ class App extends Component {
       >
         Fetch Dummy  Place Holder Data
       </button>
+      <div>
+      <br/>
+      <button
+      
+        onClick={this.componentDidMount}
+      >
+       Got Details Screen
+      </button>
+      </div>
+
+       
       /*---------------*/
       <div className="container">
         <div className="col-xs-12">
