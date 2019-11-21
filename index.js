@@ -24,7 +24,7 @@ class App extends Component {
 // https://jsonplaceholder.typicode.com/users/1/todos
 // https://jsonplaceholder.typicode.com/users/1/posts
 // componentDidMount it is one of the life cyle method
-  getDataFromPlaceholder() {
+  componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then(res => res.json())
     .then((data) => {
@@ -33,7 +33,7 @@ class App extends Component {
       //alert(this.state.todos)
     })
     .catch(console.log)
-    alert('hai')
+    //alert('hai')
     
   }
 
@@ -47,7 +47,7 @@ class App extends Component {
         </p>
          <button
         className="square"
-        onClick={this.getDataFromPlaceholder}
+        onClick={this.componentDidMount}
       >
         Fetch Dummy  Place Holder Data
       </button>
